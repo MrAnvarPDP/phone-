@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joytop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#">Joytop</a>
+      <div class="ml-auto">
+        <button class="btn" type="button">Sign In</button>
+        <button class="btn" type="button">Sign Up</button>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <div class="d-flex justify-content-around category-buttons">
+        <button class="btn btn-light apartments">Apartments</button>
+        <button class="btn btn-light hotels">Hotels</button>
+        <button class="btn btn-light resorts">Resorts</button>
+        <button class="btn btn-light tours">Tours</button>
+        <button class="btn btn-light extreme">Extreme</button>
+      </div>
+      <div class="mt-4">
+        <h2>Villas</h2>
+        <div class="d-flex justify-content-between filter-controls">
+          <select class="custom-select">
+            <option selected>Select country</option>
+            <option value="Uzbekistan">Uzbekistan</option>
+          </select>
+          <select class="custom-select">
+            <option selected>Select region</option>
+            <option value="Tashkent">Tashkent</option>
+          </select>
+          <select class="custom-select">
+            <option selected>City / district</option>
+            <option value="Bostonian">Bostonian</option>
+          </select>
+          <select class="custom-select">
+            <option selected>Select type</option>
+            <option value="Cottage">Cottage</option>
+          </select>
+          <input type="date" class="form-control" />
+          <input type="date" class="form-control" />
+          <button class="btn">Filter</button>
+          <button class="btn">Search</button>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <!-- Repeat this block for each property -->
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Cottage Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cottage</h5>
+              <p class="card-text">Name of: Kotej</p>
+              <p class="card-text">Price for a day: 3000000 UZS</p>
+              <p class="card-text">Price for a weekend: 4000000 UZS</p>
+              <p class="card-text">Uzbekistan, Tashkent region, Bostonian</p>
+              <p class="card-text">
+                <i class="fas fa-bed"></i> 1 <i class="fas fa-bath"></i> 1
+              </p>
+              <p class="card-text">10.07.2024</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+    <footer>&copy; 2024 Joytop. All Rights Reserved.</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

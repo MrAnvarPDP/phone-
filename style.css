@@ -1,0 +1,978 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  margin-bottom: 20px;
+}
+.category-buttons .btn-light {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.filter-controls .custom-select,
+.filter-controls .form-control {
+  margin-right: 10px;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ff5733;
+}
+
+.navbar .btn {
+  margin-left: 10px;
+}
+
+/* Category Buttons */
+.category-buttons .btn-light {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-buttons .btn-light:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-controls .custom-select,
+.filter-controls .form-control,
+.filter-controls .btn {
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card .card-text {
+  margin: 5px 0;
+}
+
+.card .card-text i {
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+
+/* Color Palette */
+:root {
+  --primary-color: #ff5733; /* Orange */
+  --secondary-color: #ffc107; /* Amber */
+  --accent-color: #28a745; /* Green */
+  --background-color: #f9f9f9; /* Light Gray */
+  --text-color: #333; /* Dark Gray */
+  --navbar-color: #fff; /* White */
+  --border-color: #ddd; /* Light Gray */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Light Shadow */
+  --button-hover-color: rgba(0, 0, 0, 0.05); /* Light Hover */
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--navbar-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar .btn {
+  margin-left: 10px;
+}
+
+/* Category Buttons */
+.category-buttons .btn-light {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--navbar-color);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.category-buttons .btn-light:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  background-color: var(--button-hover-color);
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-controls .custom-select,
+.filter-controls .form-control,
+.filter-controls .btn {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-controls .btn {
+  background-color: var(--primary-color);
+  color: var(--navbar-color);
+}
+
+.filter-controls .btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card .card-text {
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+.card .card-text i {
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navbar-color);
+  padding: 20px 0;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
+}
+
+/* Color Palette */
+:root {
+  --primary-color: #ff5733; /* Orange */
+  --secondary-color: #ffc107; /* Amber */
+  --accent-color: #28a745; /* Green */
+  --background-color: #f9f9f9; /* Light Gray */
+  --text-color: #333; /* Dark Gray */
+  --navbar-color: #fff; /* White */
+  --border-color: #ddd; /* Light Gray */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Light Shadow */
+  --button-hover-color: rgba(0, 0, 0, 0.05); /* Light Hover */
+  --gradient-color: linear-gradient(45deg, #ff5733, #ffc107); /* Gradient */
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--navbar-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar .btn {
+  margin-left: 10px;
+  background: var(--gradient-color);
+  border: none;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.navbar .btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Category Buttons */
+.category-buttons .btn-light {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--navbar-color);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  border-radius: 10px;
+}
+
+.category-buttons .btn-light:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  background-color: var(--button-hover-color);
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-controls .custom-select,
+.filter-controls .form-control,
+.filter-controls .btn {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-controls .btn {
+  background: var(--primary-color);
+  color: var(--navbar-color);
+  border: none;
+  transition: background 0.3s;
+}
+
+.filter-controls .btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--navbar-color);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card .card-text {
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+.card .card-text i {
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navbar-color);
+  padding: 20px 0;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
+}
+
+/* Color Palette */
+:root {
+  --primary-color: #ff5733; /* Orange */
+  --secondary-color: #ffc107; /* Amber */
+  --accent-color: #28a745; /* Green */
+  --background-color: #f9f9f9; /* Light Gray */
+  --text-color: #333; /* Dark Gray */
+  --navbar-color: #fff; /* White */
+  --border-color: #ddd; /* Light Gray */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Light Shadow */
+  --button-hover-color: rgba(0, 0, 0, 0.05); /* Light Hover */
+  --gradient-color: linear-gradient(45deg, #ff5733, #ffc107); /* Gradient */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--navbar-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar .btn {
+  margin-left: 10px;
+  background: var(--gradient-color);
+  border: none;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.navbar .btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Category Buttons */
+.category-buttons .btn-light {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  border-radius: 10px;
+}
+
+.category-buttons .btn-light:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  background-color: var(--button-hover-color);
+}
+
+/* Specific Background Images */
+.apartments {
+  background-image: url('/mnt/data/apartments.jpg');
+}
+
+.hotels {
+  background-image: url('/mnt/data/hotels.jpg');
+}
+
+.resorts {
+  background-image: url('/mnt/data/resorts.jpg');
+}
+
+.tours {
+  background-image: url('/mnt/data/tours.jpg');
+}
+
+.extreme {
+  background-image: url('/mnt/data/extreme.jpg');
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-controls .custom-select,
+.filter-controls .form-control,
+.filter-controls .btn {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-controls .btn {
+  background: var(--primary-color);
+  color: var(--navbar-color);
+  border: none;
+  transition: background 0.3s;
+}
+
+.filter-controls .btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--navbar-color);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card .card-text {
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+.card .card-text i {
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navbar-color);
+  padding: 20px 0;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
+}
+
+/* Color Palette */
+:root {
+  --primary-color: #ff5733; /* Orange */
+  --secondary-color: #ffc107; /* Amber */
+  --accent-color: #28a745; /* Green */
+  --background-color: #f9f9f9; /* Light Gray */
+  --text-color: #333; /* Dark Gray */
+  --navbar-color: #fff; /* White */
+  --border-color: #ddd; /* Light Gray */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Light Shadow */
+  --button-hover-color: rgba(0, 0, 0, 0.05); /* Light Hover */
+  --gradient-color: linear-gradient(45deg, #ff5733, #ffc107); /* Gradient */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--navbar-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar .btn {
+  margin-left: 10px;
+  background: var(--gradient-color);
+  border: none;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.navbar .btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Category Buttons */
+.category-buttons .btn-light {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  border-radius: 10px;
+}
+
+.category-buttons .btn-light:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  background-color: var(--button-hover-color);
+}
+
+/* Specific Background Images */
+.apartments {
+  background-image: url('/mnt/data/apartments.jpg');
+}
+
+.hotels {
+  background-image: url('/mnt/data/hotels.jpg');
+}
+
+.resorts {
+  background-image: url('/mnt/data/resorts.jpg');
+}
+
+.tours {
+  background-image: url('/mnt/data/tours.jpg');
+}
+
+.extreme {
+  background-image: url('/mnt/data/extreme.jpg');
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-controls .custom-select,
+.filter-controls .form-control,
+.filter-controls .btn {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-controls .btn {
+  background: var(--primary-color);
+  color: var(--navbar-color);
+  border: none;
+  transition: background 0.3s;
+}
+
+.filter-controls .btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--navbar-color);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card .card-text {
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+.card .card-text i {
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navbar-color);
+  padding: 20px 0;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
+}
+
+/* Color Palette */
+:root {
+  --primary-color: #ff5733; /* Orange */
+  --secondary-color: #ffc107; /* Amber */
+  --accent-color: #28a745; /* Green */
+  --background-color: #f9f9f9; /* Light Gray */
+  --text-color: #333; /* Dark Gray */
+  --navbar-color: #fff; /* White */
+  --border-color: #ddd; /* Light Gray */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Light Shadow */
+  --button-hover-color: rgba(0, 0, 0, 0.05); /* Light Hover */
+  --gradient-color: linear-gradient(45deg, #ff5733, #ffc107); /* Gradient */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--navbar-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar .btn {
+  margin-left: 10px;
+  background: var(--gradient-color);
+  border: none;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.navbar .btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Category Buttons */
+.category-buttons .btn-light {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  border-radius: 10px;
+}
+
+.category-buttons .btn-light:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  background-color: var(--button-hover-color);
+}
+
+/* Specific Background Images */
+.apartments {
+  background-image: url('/mnt/data/apartments.jpg');
+}
+
+.hotels {
+  background-image: url('/mnt/data/hotels.jpg');
+}
+
+.resorts {
+  background-image: url('/mnt/data/resorts.jpg');
+}
+
+.tours {
+  background-image: url('/mnt/data/tours.jpg');
+}
+
+.extreme {
+  background-image: url('/mnt/data/extreme.jpg');
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-controls .custom-select,
+.filter-controls .form-control,
+.filter-controls .btn {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-controls .btn {
+  background: var(--primary-color);
+  color: var(--navbar-color);
+  border: none;
+  transition: background 0.3s;
+}
+
+.filter-controls .btn:hover {
+  background: var(--secondary-color);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--navbar-color);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.card .card-text {
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+.card .card-text i {
+  margin-right: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--navbar-color);
+  padding: 20px 0;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .category-buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .category-buttons .btn-light {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+  }
+
+  .filter-controls {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .filter-controls .custom-select,
+  .filter-controls .form-control,
+  .filter-controls .btn {
+      min-width: 100%;
+  }
+
+  .card img {
+      height: 150px;
+  }
+
+  .card .card-body {
+      padding: 10px;
+  }
+
+  .card .card-title {
+      font-size: 1.2em;
+  }
+
+  .card .card-text {
+      font-size: 0.9em;
+  }
+
+  .navbar .btn {
+      margin-left: 5px;
+  }
+}
